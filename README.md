@@ -2,6 +2,8 @@
 Github issue #10 "[Variational Quantum Eigensolver](https://github.com/qiskit-community/qiskit-hackathon-taiwan-20/issues/10)"
 
 ## Topic
+Quantum computing has been considered to possess the capability of tackling some classically intractable problems such as quantum many-body simulation. However the reliability and scalability of the state-of-the-art quantum hardware, called Noisy Intermediate-Scale Quantum(NISQ) device, has not reached the threshold to implement any useful pure quantum algorithms. Thus in the NISQ era, hybrid-quantum-classical(HQC) algorithms are getting popular, where variational quantum eigensolver(VQE) is one of the currently applicable methods[1].
+VQE consists of four main parts including Hamiltonian definition, ansatz design, measurement, and optimization. For Qiskit beginners, as the first step they may try to implement a VQE program from scratch for some pre-defined problem such as molecular energy calculation. Moreover, the design of ansatz(e.g. hardware-efficient ones[2] or problem-specific ones such as UCCSD[3]), strategy for efficient measurement[4], ways of optimization(e.g. gradient-based[5] or not) are all open to question. Participants are encouraged to discuss or study about any aspect of the VQE procedure.
 
 ## Discussion
 
@@ -36,22 +38,32 @@ Github issue #10 "[Variational Quantum Eigensolver](https://github.com/qiskit-co
 * 
 ## Reference
 
+Reference
+[1] Nature communications 5, 4213 (2014)
 
-[1] Alberto Peruzzo *etal.*, [*"A variational eigenvalue solver on a quantum processor"*](https://arxiv.org/pdf/1304.3061.pdf),  Nature communications 5, 4213 (2014)
+[2] Nature 549, 242-246(2017)
 
-[2] Rongxin Xia and Sabre Kais, ["Hybrid Quantum-Classical Neural Network for Calculating Ground State Energies of Molecules"](https://www.mdpi.com/1099-4300/22/8/828/htm), (2020)
+[3] Nature communications 5, 4213 (2014)
 
-[3] Pennylane(Xanadu),[*"A brief overview of VQE"*](https://pennylane.ai/qml/demos/tutorial_vqe.html).
+[4] J. Chem. Phys. 152, 124114 (2020)
 
-[4] Pennylane(Xanadu), [*"Accelerating VQEs with quantum natural gradient"*](https://pennylane.ai/qml/demos/tutorial_vqe_qng.html).
+[5] Phys. Rev. A 99, 032331 (2019)
 
-[5] Pennylane(Xanadu), [*"Variational classifier"*](https://pennylane.ai/qml/demos/tutorial_variational_classifier.html).
+[6] Alberto Peruzzo *etal.*, [*"A variational eigenvalue solver on a quantum processor"*](https://arxiv.org/pdf/1304.3061.pdf),  Nature communications 5, 4213 (2014)
 
-[6] K. Fujii *etal.*, ["*Deep Variational Quantum Eigensolver: a divide-and-conquer method for solving a larger problem with smaller size quantum computers*"](https://arxiv.org/pdf/2007.10917.pdf), (2020)
+[7] Rongxin Xia and Sabre Kais, ["Hybrid Quantum-Classical Neural Network for Calculating Ground State Energies of Molecules"](https://www.mdpi.com/1099-4300/22/8/828/htm), (2020)
 
-[7] V. Verteletskyi etal., ["*Measurement Optimization in the Variational Quantum Eigensolver Using a Minimum Clique Cover*"](https://arxiv.org/pdf/1912.06184.pdf), (2020)
+[8] Pennylane(Xanadu),[*"A brief overview of VQE"*](https://pennylane.ai/qml/demos/tutorial_vqe.html).
 
-[8] Möttönen, *etal.* [*Transformation of quantum states using uniformly controlled rotations*](https://arxiv.org/pdf/quant-ph/0407010.pdf), (2008)]
+[9] Pennylane(Xanadu), [*"Accelerating VQEs with quantum natural gradient"*](https://pennylane.ai/qml/demos/tutorial_vqe_qng.html).
+
+[10] Pennylane(Xanadu), [*"Variational classifier"*](https://pennylane.ai/qml/demos/tutorial_variational_classifier.html).
+
+[11] K. Fujii *etal.*, ["*Deep Variational Quantum Eigensolver: a divide-and-conquer method for solving a larger problem with smaller size quantum computers*"](https://arxiv.org/pdf/2007.10917.pdf), (2020)
+
+[12] V. Verteletskyi etal., ["*Measurement Optimization in the Variational Quantum Eigensolver Using a Minimum Clique Cover*"](https://arxiv.org/pdf/1912.06184.pdf), (2020)
+
+[13] Möttönen, *etal.* [*Transformation of quantum states using uniformly controlled rotations*](https://arxiv.org/pdf/quant-ph/0407010.pdf), (2008)]
 
 * https://github.com/BoschSamuel/QizGloria/tree/master/Notebooks
 * https://github.com/dumkar/learning-to-learn-qnn
